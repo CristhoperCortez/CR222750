@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  body{
+    background: rgb(36, 10, 41);
+    color: white;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+  }
+  header{
+    height: 110px;
+    background: blueviolet;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .inner-width{
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: auto;
+  }
+  .imagenmenu{
+    float: left;
+    padding: 20px 0;
+  }
+  .imagenmenu img{
+    height: 70px;
+    width: 200px;
+  }
+  .contenedor{
+    width: 98%;
+    margin: auto;
+  }
+  header label{
+    float: right;
+    font-size: 28px;
+    margin: 35px;
+    color: white;
+    cursor: pointer;
+  }
+  header .contenedor{
+    display: table;
+  }
+  #menu-bar{
+    display: none;
+  }
+  .menu{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    top: 115px;
+    left: 0;
+    background: blueviolet;  
+    transition: all 0.5s;
+    transform: translateX(-100%);
+  }
+  .elejido{
+    background: rgb(219, 172, 217);
+  }
+  .menu a{
+    display: block;
+    color: #ddd;
+    height: 30px;
+    text-decoration: none;
+    padding: 40px;
+    border-bottom: 1px solid rgba(224, 88, 236, 0.5);
+    text-align: center;
+  }
+
+  #menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+  }
+  
+  @media (min-width:1024px){
+    .menu {
+      position: static;
+      width: auto;
+      height: auto;
+      transform: translateX(0%);
+      float: right;
+      display: flex;
+    }
+   header label{
+     display: none;
+   }
+.menu a{
+  border: none;
+}
+
+  }
+  hr{
+      left: 0%;
+  }
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    top: -40px;
+    justify-content: center;
+    margin: auto;
+}
+.container .card{
+    width: 550px;
+    height:520px;
+    margin: 10px;
+    text-align: center;
+    background: blueviolet;;
+}
+.container .card p{
+    padding: 2rem;
+    font-size: 22px;
+}
+.video{
+ position:relative;
+ width: 485px;
+ height: 310px;
+}
